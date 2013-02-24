@@ -1,0 +1,17 @@
+.DS_Store
+
+# ignore our revision file
+revision.h
+
+# ignore Doxygen generated files
+Docs
+
+# build directories
+build/*
+ 
+# Xcode user data
+**.pbxuser
+**.mode?v?
+**.perspectivev?
+**/xcuserdata
+
