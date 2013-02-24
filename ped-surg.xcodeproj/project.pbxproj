@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE97291816D9C82300086FFF /* libsqlk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE97291716D9C82300086FFF /* libsqlk.a */; };
+		EE97291A16D9CB9900086FFF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE97291916D9CB9900086FFF /* libsqlite3.dylib */; };
 		EEA8BEB816D9BF5F0003CF0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA8BEB716D9BF5F0003CF0D /* UIKit.framework */; };
 		EEA8BEBA16D9BF5F0003CF0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA8BEB916D9BF5F0003CF0D /* Foundation.framework */; };
 		EEA8BEBC16D9BF5F0003CF0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA8BEBB16D9BF5F0003CF0D /* CoreGraphics.framework */; };
@@ -18,9 +20,12 @@
 		EEA8BECE16D9BF600003CF0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA8BECD16D9BF600003CF0D /* Default-568h@2x.png */; };
 		EEA8BED116D9BF600003CF0D /* PPMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8BED016D9BF600003CF0D /* PPMasterViewController.m */; };
 		EEA8BED416D9BF600003CF0D /* PPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8BED316D9BF600003CF0D /* PPDetailViewController.m */; };
+		EEA8BEE916D9C6B70003CF0D /* SQLiteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8BEE816D9C6B70003CF0D /* SQLiteObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE97291716D9C82300086FFF /* libsqlk.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libsqlk.a; path = "sqlk/build/Release-iphoneos/libsqlk.a"; sourceTree = "<group>"; };
+		EE97291916D9CB9900086FFF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EEA8BEB416D9BF5F0003CF0D /* ped-surg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ped-surg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA8BEB716D9BF5F0003CF0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EEA8BEB916D9BF5F0003CF0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,6 +43,8 @@
 		EEA8BED016D9BF600003CF0D /* PPMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPMasterViewController.m; sourceTree = "<group>"; };
 		EEA8BED216D9BF600003CF0D /* PPDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDetailViewController.h; sourceTree = "<group>"; };
 		EEA8BED316D9BF600003CF0D /* PPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPDetailViewController.m; sourceTree = "<group>"; };
+		EEA8BEE716D9C6B70003CF0D /* SQLiteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLiteObject.h; path = sqlk/Classes/SQLiteObject.h; sourceTree = SOURCE_ROOT; };
+		EEA8BEE816D9C6B70003CF0D /* SQLiteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLiteObject.m; path = sqlk/Classes/SQLiteObject.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE97291A16D9CB9900086FFF /* libsqlite3.dylib in Frameworks */,
+				EE97291816D9C82300086FFF /* libsqlk.a in Frameworks */,
 				EEA8BEB816D9BF5F0003CF0D /* UIKit.framework in Frameworks */,
 				EEA8BEBA16D9BF5F0003CF0D /* Foundation.framework in Frameworks */,
 				EEA8BEBC16D9BF5F0003CF0D /* CoreGraphics.framework in Frameworks */,
@@ -57,6 +66,7 @@
 		EEA8BEAB16D9BF5F0003CF0D = {
 			isa = PBXGroup;
 			children = (
+				EE97291916D9CB9900086FFF /* libsqlite3.dylib */,
 				EEA8BEBD16D9BF5F0003CF0D /* Classes */,
 				EEA8BEBE16D9BF5F0003CF0D /* Supporting Files */,
 				EEA8BEE616D9C3020003CF0D /* Images */,
@@ -79,6 +89,7 @@
 				EEA8BEB716D9BF5F0003CF0D /* UIKit.framework */,
 				EEA8BEB916D9BF5F0003CF0D /* Foundation.framework */,
 				EEA8BEBB16D9BF5F0003CF0D /* CoreGraphics.framework */,
+				EE97291716D9C82300086FFF /* libsqlk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 				EEA8BED016D9BF600003CF0D /* PPMasterViewController.m */,
 				EEA8BED216D9BF600003CF0D /* PPDetailViewController.h */,
 				EEA8BED316D9BF600003CF0D /* PPDetailViewController.m */,
+				EEA8BEEA16D9C6BE0003CF0D /* Models */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -115,6 +127,15 @@
 				EEA8BECD16D9BF600003CF0D /* Default-568h@2x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		EEA8BEEA16D9C6BE0003CF0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8BEE716D9C6B70003CF0D /* SQLiteObject.h */,
+				EEA8BEE816D9C6B70003CF0D /* SQLiteObject.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +208,7 @@
 				EEA8BEC816D9BF5F0003CF0D /* PPAppDelegate.m in Sources */,
 				EEA8BED116D9BF600003CF0D /* PPMasterViewController.m in Sources */,
 				EEA8BED416D9BF600003CF0D /* PPDetailViewController.m in Sources */,
+				EEA8BEE916D9C6B70003CF0D /* SQLiteObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +291,7 @@
 				GCC_PREFIX_HEADER = "ped-surg-Prefix.pch";
 				INFOPLIST_FILE = "ped-surg-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -280,6 +303,7 @@
 				GCC_PREFIX_HEADER = "ped-surg-Prefix.pch";
 				INFOPLIST_FILE = "ped-surg-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -303,6 +327,7 @@
 				EEA8BEE516D9BF600003CF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

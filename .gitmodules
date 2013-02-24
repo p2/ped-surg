@@ -1,0 +1,3 @@
+[submodule "sqlk"]
+	path = sqlk
+	url = git://github.com/p2/sqlk.git
